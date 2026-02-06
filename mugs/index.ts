@@ -7,6 +7,6 @@ console.log("2. Filter by ID");
 console.log("3. Exit");
 console.log();
 let choice: number = rl.questionInt("Please enter your choice: ");
-
+console.log(`You choose ${choice}`);
 
 export {}
