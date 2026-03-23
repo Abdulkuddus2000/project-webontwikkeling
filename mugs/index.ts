@@ -1,59 +1,55 @@
 import * as rl from 'readline-sync';
-import {mug, manufacturer} from "./mugs_interfaces";
+import data from "./mugs.json";
+import type { Mug } from "./mugs_interfaces";
 
+let mugs: Mug[] = data as Mug[];
+let mainMenu: string[] = ["view all data", "filter by ID", "exit"];
 
 console.log("Welcome to the JSON data viewer!");
 
-let mainMenu: string[] = ["View all data", "Filter by ID", "Exit"];
+let running: boolean = true;
 
-let choosenMenuItem: number = rl.keyInSelect(
-    mainMenu,
-    "Give me a number: ",
-    {cancel: false}
-);
+do{
+    let choosenMenuItem: number = rl.keyInSelect(
+        mainMenu,
+        "Give me a number: "
+    );
 
-console.log(`You choose ${mainMenu[choosenMenuItem]}`);
+    console.log(`You choose to ${mainMenu[choosenMenuItem]}`);
 
-
-if(choosenMenuItem == 1){
-    // view all data
-
-}else if(choosenMenuItem == 2){
-    // filter by ID
-    async function fetchMugs(): Promise<>{
-        try{
-            const mugsResponse = await fetch("https://raw.githubusercontent.com/Abdulkuddus2000/json-data-mugs/refs/heads/main/mugs.json")
-            
-            if(mugsResponse.status === 404) throw new Error('No mug found');
-            if(mugsResponse.status === 500) throw new Error('Internar server error');
-
-            const mugs: Mug[] = await mugsResponse.json();
-            console.log(mugs[0].name);
-        }catch(error: any){
-            console.log(error);
-        }
-    }
-    // const responseManufacturers = await fetch("https://raw.githubusercontent.com/Abdulkuddus2000/json-data-mugs/refs/heads/main/manufacturers.json")
-    
-}else{
-    // exit, wderkt nog niet
-
-    async function exitFunction(){
-        const exitPromise: Promise<void> = new Promise((resolve) => {
-            setTimeout(() => {
-                console.log();("Program is going to exit...");
-                resolve();
-            }, 1000);
+    if(choosenMenuItem == 0){
+        // view all data     
+        mugs.forEach(mug =>{
+            console.log(`${mug.id} - ${mug.name}`);
         });
 
-        process.exit(0); // voorkomen dat Node direct afsluit
+    }else if(choosenMenuItem == 1){
+        // filter by ID
+        const searchId: number =  rl.questionInt("Enter ID you want to filter by: ");
+        const foundMug = mugs.find(mug => mug.id === searchId);
+        
+        if (foundMug){
+            console.log();
+            console.log(`ID: ${foundMug.id}`);
+            console.log(`Name: ${foundMug.name}`);
+            console.log(`Description: ${foundMug.description}`);
+            console.log(`Price: ${foundMug.price}`);
+            console.log(`Is in stock: ${foundMug.inStock}`);
+            console.log(`Release date: ${foundMug.releaseDate}`);
+            console.log(`Image: ${foundMug.image}`);
+            console.log(`Type: ${foundMug.type}`);
+            console.log(`Tags: ${foundMug.tags}`);
+            console.log(`Manufacturer: ${foundMug.manufacturer}`);
+            console.log();
+        }
     }
 
-    exitFunction();
-
-
-    // console.log("Program is going to exit.");
-}
+    else{
+        running = false;
+        process.exit(0);
+    }
+        
+}while(running);
 
 
 

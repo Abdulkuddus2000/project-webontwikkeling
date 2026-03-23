@@ -1,0 +1,58 @@
+[
+  {
+    "id": 101,
+    "name": "Nordic Cups",
+    "country": "België",
+    "active": true,
+    "logo": "https://example.com/logos/nordic.png"
+  },
+  {
+    "id": 102,
+    "name": "Urban Drinkware",
+    "country": "Nederland",
+    "active": true,
+    "logo": "https://example.com/logos/urban.png"
+  },
+  {
+    "id": 103,
+    "name": "HeatKeep",
+    "country": "Duitsland",
+    "active": true,
+    "logo": "https://example.com/logos/heatkeep.png"
+  },
+  {
+    "id": 104,
+    "name": "WildTrail Gear",
+    "country": "Zweden",
+    "active": true,
+    "logo": "https://example.com/logos/wildtrail.png"
+  },
+  {
+    "id": 105,
+    "name": "ClearSip",
+    "country": "Frankrijk",
+    "active": true,
+    "logo": "https://example.com/logos/clearsip.png"
+  },
+  {
+    "id": 106,
+    "name": "EarthMade",
+    "country": "Italië",
+    "active": true,
+    "logo": "https://example.com/logos/earthmade.png"
+  },
+  {
+    "id": 107,
+    "name": "GreenSip",
+    "country": "Spanje",
+    "active": true,
+    "logo": "https://example.com/logos/greensip.png"
+  },
+  {
+    "id": 108,
+    "name": "Royal Porcelain",
+    "country": "Verenigd Koninkrijk",
+    "active": true,
+    "logo": "https://example.com/logos/royal.png"
+  }
+]

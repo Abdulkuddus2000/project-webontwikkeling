@@ -1,0 +1,182 @@
+[
+  {
+    "id": 1,
+    "name": "Classic White Mug",
+    "description": "Een eenvoudige maar stijlvolle witte koffietas die perfect is voor dagelijks gebruik thuis of op kantoor.",
+    "price": 9.99,
+    "inStock": true,
+    "releaseDate": "2023-01-15",
+    "image": "raw.githubusercontent.com/Abdulkuddus2000/json-data-mugs/6ccf67c1e8a1e0249be7079a97be51f1feaa58be/mug_1.png",
+    "type": "ceramic",
+    "tags": ["klassiek", "wit", "dagelijks"],
+    "manufacturer": {
+      "id": 101,
+      "name": "Nordic Cups",
+      "country": "België",
+      "active": true,
+      "logo": "https://example.com/logos/nordic.png"
+    }
+  },
+  {
+    "id": 2,
+    "name": "Black Matte Mug",
+    "description": "Een moderne matte zwarte koffietas met strak design en comfortabele handgreep.",
+    "price": 12.5,
+    "inStock": true,
+    "releaseDate": "2023-05-10",
+    "image": "https://raw.githubusercontent.com/Abdulkuddus2000/json-data-mugs/refs/heads/main/mug_2.png",
+    "type": "ceramic",
+    "tags": ["modern", "zwart", "mat"],
+    "manufacturer": {
+      "id": 102,
+      "name": "Urban Drinkware",
+      "country": "Nederland",
+      "active": true,
+      "logo": "https://example.com/logos/urban.png"
+    }
+  },
+  {
+    "id": 3,
+    "name": "Travel Thermo Mug",
+    "description": "Een geïsoleerde thermotas voor onderweg die koffie urenlang warm houdt.",
+    "price": 19.99,
+    "inStock": false,
+    "releaseDate": "2022-11-01",
+    "image": "https://raw.githubusercontent.com/Abdulkuddus2000/json-data-mugs/refs/heads/main/mug_3.png",
+    "type": "thermal",
+    "tags": ["reis", "warm", "thermo"],
+    "manufacturer": {
+      "id": 103,
+      "name": "HeatKeep",
+      "country": "Duitsland",
+      "active": true,
+      "logo": "https://example.com/logos/heatkeep.png"
+    }
+  },
+  {
+    "id": 4,
+    "name": "Enamel Camping Mug",
+    "description": "Een stevige emaille tas ideaal voor kamperen of buitengebruik.",
+    "price": 14,
+    "inStock": true,
+    "releaseDate": "2021-06-20",
+    "image": "https://raw.githubusercontent.com/Abdulkuddus2000/json-data-mugs/refs/heads/main/mug_4.png",
+    "type": "enamel",
+    "tags": ["camping", "outdoor", "licht"],
+    "manufacturer": {
+      "id": 104,
+      "name": "WildTrail Gear",
+      "country": "Zweden",
+      "active": true,
+      "logo": "https://example.com/logos/wildtrail.png"
+    }
+  },
+  {
+    "id": 5,
+    "name": "Glass Latte Cup",
+    "description": "Een transparante glazen tas speciaal ontworpen voor latte macchiato.",
+    "price": 11,
+    "inStock": true,
+    "releaseDate": "2024-02-01",
+    "image": "https://raw.githubusercontent.com/Abdulkuddus2000/json-data-mugs/refs/heads/main/mug_5.png",
+    "type": "glass",
+    "tags": ["latte", "glas", "modern"],
+    "manufacturer": {
+      "id": 105,
+      "name": "ClearSip",
+      "country": "Frankrijk",
+      "active": true,
+      "logo": "https://example.com/logos/clearsip.png"
+    }
+  },
+  {
+    "id": 6,
+    "name": "Retro Pattern Mug",
+    "description": "Kleurrijke koffietas met retro patroon die meteen opvalt op tafel.",
+    "price": 13.75,
+    "inStock": false,
+    "releaseDate": "2022-03-11",
+    "image": "https://raw.githubusercontent.com/Abdulkuddus2000/json-data-mugs/refs/heads/main/mug_6.png",
+    "type": "ceramic",
+    "tags": ["retro", "kleur", "design"],
+    "manufacturer": {
+      "id": 101,
+      "name": "Nordic Cups",
+      "country": "België",
+      "active": true,
+      "logo": "https://example.com/logos/nordic.png"
+    }
+  },
+  {
+    "id": 7,
+    "name": "Minimal Stone Mug",
+    "description": "Een minimalistische stenen tas met natuurlijke afwerking.",
+    "price": 17,
+    "inStock": true,
+    "releaseDate": "2023-09-30",
+    "image": "https://raw.githubusercontent.com/Abdulkuddus2000/json-data-mugs/refs/heads/main/mug_7.png",
+    "type": "stoneware",
+    "tags": ["minimal", "steen", "rustiek"],
+    "manufacturer": {
+      "id": 106,
+      "name": "EarthMade",
+      "country": "Italië",
+      "active": true,
+      "logo": "https://example.com/logos/earthmade.png"
+    }
+  },
+  {
+    "id": 8,
+    "name": "Office Jumbo Mug",
+    "description": "Extra grote koffietas voor lange werkdagen en veel cafeïne.",
+    "price": 15.5,
+    "inStock": true,
+    "releaseDate": "2021-12-05",
+    "image": "https://raw.githubusercontent.com/Abdulkuddus2000/json-data-mugs/refs/heads/main/mug_8.png",
+    "type": "ceramic",
+    "tags": ["groot", "kantoor", "jumbo"],
+    "manufacturer": {
+      "id": 102,
+      "name": "Urban Drinkware",
+      "country": "Nederland",
+      "active": true,
+      "logo": "https://example.com/logos/urban.png"
+    }
+  },
+  {
+    "id": 9,
+    "name": "Eco Bamboo Cup",
+    "description": "Milieuvriendelijke koffietas gemaakt van bamboevezels.",
+    "price": 10,
+    "inStock": true,
+    "releaseDate": "2024-04-12",
+    "image": "https://raw.githubusercontent.com/Abdulkuddus2000/json-data-mugs/refs/heads/main/mug_9.png",
+    "type": "eco",
+    "tags": ["eco", "bamboe", "duurzaam"],
+    "manufacturer": {
+      "id": 107,
+      "name": "GreenSip",
+      "country": "Spanje",
+      "active": true,
+      "logo": "https://example.com/logos/greensip.png"
+    }
+  },
+  {
+    "id": 10,
+    "name": "Luxury Gold Rim Mug",
+    "description": "Elegante koffietas met gouden rand voor speciale gelegenheden.",
+    "price": 24.99,
+    "inStock": false,
+    "releaseDate": "2022-08-18",
+    "image": "https://github.com/Abdulkuddus2000/json-data-mugs/blob/main/mug_10.png",
+    "type": "porcelain",
+    "tags": ["luxe", "goud", "feest"],
+    "manufacturer": {
+      "id": 108,
+      "name": "Royal Porcelain",
+      "country": "Verenigd Koninkrijk",
+      "active": true,
+      "logo": "https://example.com/logos/royal.png"
+    }
+  }
+]
